@@ -1,8 +1,8 @@
-# SQL Portfolio
+# Portfolio
 
 ## Stack Overflow Data
 
-I did initial analysis using the Stack Overflow data set in Google BigQuery.
+I did initial analysis using the Stack Overflow data set in Google BigQuery. Since it was a new-to-me dataset, I did some basic SQL to gain more understanding and then built up to a more complex analysis from there.
 
 All SQL links can be found [here](https://github.com/kim-h-l/portfolio-sql/tree/main/stackoverflow)
 
@@ -12,7 +12,7 @@ I went to Stack Overflow and found the [top user of all time](https://stackoverf
 
 ### Data Quality Checks
 
-I then did some basic data quality checks to make sure I understood where I might find null values or duplication (to check for a primary key). I did also did a check to see if my assumption was valid that reputation couldn't be negative or zero.
+I did some basic data quality checks to make sure I understood where I might find null values or duplication (to check for a primary key). I also did a check to see if my assumption was valid that reputation couldn't be negative or zero.
 
 1. [What is the min and max reputation? So that I can understand the range of values.](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/002_dq_reputation_min_max.sql)
 2. [Can reputation be null?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/003_dq_reputation_null.sql)
