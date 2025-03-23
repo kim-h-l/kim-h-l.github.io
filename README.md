@@ -1,20 +1,20 @@
 # Portfolio
 
-## **Exploring Stack Overflow Data with BigQuery**  
+## **Exploring Stack Overflow Data**  
 
-Welcome to my portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery**. To familiarize myself with this dataset, I initiated basic SQL queries to understand its structure before progressing to more complex analyses.
+Welcome to my portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery** and **Tableau**. I began by writing basic SQL queries to explore the dataset’s structure before progressing to more complex analyses.
 
-All referenced SQL queries can be found in my [GitHub repository](https://github.com/kim-h-l/portfolio-sql/tree/main/stackoverflow).  
+All referenced SQL queries can be found in my [GitHub repository](https://github.com/kim-h-l/portfolio-sql/tree/main/stackoverflow) and the visualization can be found in [Tableau Public](https://public.tableau.com/views/StackOverflowDataExploration/StackOverflow).  
 
 ---
 
-## **🔍 Understanding the Data**  
+### **🔍 Understanding the Data**  
 
 To get started, I explored what the dataset could reveal about Stack Overflow’s top users. I looked up the [top user of all time](https://stackoverflow.com/users/22656/jon-skeet) and used their user ID, along with the available BigQuery schema, to conduct a [basic check](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/001_user_data_exploration.sql) on the `users` table. This helped me understand the table’s structure and the types of insights I could extract.  
 
 ---
 
-## **✅ Ensuring Data Quality**  
+### **Ensuring Data Quality**  
 
 Before performing deeper analysis, I conducted **data quality checks** to identify potential issues such as null values, duplicates, or unexpected data. Key questions I examined:  
 
@@ -25,7 +25,7 @@ Before performing deeper analysis, I conducted **data quality checks** to identi
 
 ---
 
-## **📊 Exploratory Data Analysis (EDA)**  
+### **Exploratory Data Analysis (EDA)**  
 
 Once I confirmed data quality, I conducted **exploratory data analysis (EDA)** to uncover patterns and trends. Some key questions I explored:  
 
@@ -35,7 +35,7 @@ Once I confirmed data quality, I conducted **exploratory data analysis (EDA)** t
 
 ---
 
-## **🤔 Deeper Analysis: Advanced SQL Techniques**  
+### **Deeper Analysis: Advanced SQL Techniques**  
 
 After initial EDA, I used **CTEs and window functions** to answer more complex questions and gain deeper insights:  
 
@@ -45,6 +45,21 @@ After initial EDA, I used **CTEs and window functions** to answer more complex q
 4. [How have the top 10 users’ scores changed over rolling 5-year periods?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/012_top_10_users_rolling_scores.sql)  
 5. [When did the top 10 users see the biggest year-over-year changes in question and answer scores?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/013_top_10_users_yoy_q_a_growth.sql)
 
+---
+### **Visualization Using Tableau**
+
+To make insights more accessible, I’ve designed interactive visualizations to explore engagement patterns among the top 100 users by reputation on Stack Overflow. The dashboard includes:
+
+- Reputation distribution across individual top users.
+- Average score comparison for questions vs. answers by user.
+- Trends in user longevity, showing the relationship between years of activity, average reputation, and number of distinct users.
+  
+I plan to expand this dashboard with additional insights on tag trends, long-term reputation growth, and user engagement patterns.
+
+[Link to Dashboard](https://public.tableau.com/views/StackOverflowDataExploration/StackOverflow)
+
+
+
 ___
 
-This project used the publicly available [Stack Overflow](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow) dataset in BigQuery. This project is licensed under CC-BY-SA 4.0. See the LICENSE file for details.
+This project used the publicly available [Stack Overflow](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow) dataset in BigQuery. This project is licensed under CC-BY-SA 4.0. See the [LICENSE](https://github.com/kim-h-l/kim-h-l.github.io/blob/main/LICENSE) file for details.
