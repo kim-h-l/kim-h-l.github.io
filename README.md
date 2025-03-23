@@ -1,5 +1,3 @@
-# Portfolio
-
 ## **Exploring Stack Overflow Data**  
 
 Welcome to my portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery** and **Tableau**. I began by writing basic SQL queries to explore the dataset’s structure before progressing to more complex analyses.
